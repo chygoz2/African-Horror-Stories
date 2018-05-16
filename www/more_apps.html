@@ -27,7 +27,7 @@
             text-decoration: none;
             color: inherit;
         }
-        nav {
+        .nav {
             background: #323232;
             display: flex;
             flex-direction: row;
@@ -35,12 +35,46 @@
             padding: 20px 20px 20px 20px;
         }
 
-        nav img {
+        .nav img {
             border-radius: 50%;
             width: 32px;
             height: 32px;
         }
-        nav spans.title {
+        .nav spans.title {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            letter-spacing: -0.0241176em;
+        }
+
+        .nav-top {
+            background: #000000;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .nav-top img {
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            margin-bottom:10px;
+        }
+
+        .nav-top div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 10px;
+        }
+
+        .nav-top span.fa {
+            margin-top: 12px;
+        }
+
+        .nav-top span.title {
             font-family: Lato;
             font-style: normal;
             font-weight: normal;
@@ -107,11 +141,19 @@
     </style>
 </head>
 <body>
-    <nav>
+    <div class="nav-top">
+        <a href="index.html"><span class="fa fa-angle-left"></span></a>
+        <div>
+            <img src="images/1.jpg" />
+            <span>African Horror Stories</span>    
+        </div>
+        <span class="fa fa-info-circle"></span>
+    </div>
+    <div class="nav">
         <img src="images/1.jpg" />
-        <span class="title">More Apps by HNG</span>
-        <span class="fa fa-share-alt"></span>
-    </nav>
+        <span class="title">All Stories</span>
+        <span class="fa fa-share-alt" style="visibility: hidden;"></span>
+    </div>
     
     <div id="app-ads">
         <div class="app-ad">
